@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="welcome_1" translatable="false">안녕하세요</string>
+
+    <string name="welcome_2" translatable="false">커피주문앱 제작중입니다.</string>
 </resources>
+
