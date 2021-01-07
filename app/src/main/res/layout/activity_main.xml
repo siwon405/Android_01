@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="1.6"
         android:orientation="vertical">
 
         <TextView
@@ -20,9 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:paddingTop="8dp"
             android:gravity="center_horizontal|center_vertical"
             android:background="#E4FFFC"
-            android:textSize="45sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:text="@string/welcome_2"
@@ -31,7 +32,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
             android:background="#E4FFFC"
-            android:textSize="20sp"/>
+            android:textSize="14sp"/>
 
     </LinearLayout>
 
@@ -39,6 +40,7 @@
         android:src="@drawable/macarons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"/>
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
