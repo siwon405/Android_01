@@ -40,7 +40,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return String.format (Locale.KOREA,"조회한 ID : %s\n조회한 계지의 잔액 : %d", id, balance);
+        return String.format (Locale.KOREA,"조회한 ID : %s\n조회한 계좌의 잔액 : %d", id, balance);
     }
 
 }
