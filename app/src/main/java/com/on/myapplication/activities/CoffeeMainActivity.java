@@ -1,8 +1,10 @@
-package com.on.myapplication;
+package com.on.myapplication.activities;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.on.myapplication.R;
 
 public class CoffeeMainActivity extends AppCompatActivity {
 

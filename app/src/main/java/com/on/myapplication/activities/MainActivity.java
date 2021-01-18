@@ -1,4 +1,4 @@
-package com.on.myapplication;
+package com.on.myapplication.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.on.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
     private static final String Tag = MainActivity.class.getSimpleName();
