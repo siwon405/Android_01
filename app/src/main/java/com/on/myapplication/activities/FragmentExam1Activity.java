@@ -16,27 +16,35 @@ public class FragmentExam1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_fragment_exam1);
     }
 
-    private void addFragment(int containerId, int color, String text) {
-        TextFragment textFragment = new TextFragment();
-        textFragment.setColor(color);
-
-        getSupportFragmentManager().beginTransaction()
-                .add(containerId, textFragment)
-                .commit();
-
-        textFragment.setmText(text);
-    }
-
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
-                addFragment(R.id.container_1, 0xFFFD1F70,"1번입니다");
+                TextFragment textFragment = new TextFragment();
+                textFragment.setColor( 0xFFFD1F70);
+
+                getSupportFragmentManager().beginTransaction()
+                        .add(R.id.container_1, textFragment)
+                        .commit();
+
+                textFragment.setmText("1번입니다");
                 break;
             case R.id.button2:
-                addFragment(R.id.container_2, 0xFF88E329,"2번입니다");
+                TextFragment textFragment2 = new TextFragment();
+                textFragment2.setColor( 0xFF03DAC5);
+                textFragment2.setmText("2번입니다");
+
+                getSupportFragmentManager().beginTransaction()
+                        .add(R.id.container_2, textFragment2)
+                        .commit();
                 break;
             case R.id.button3:
-                addFragment(R.id.container_3, 0xFF750065,"3번입니다");
+                TextFragment textFragment3 = new TextFragment();
+                textFragment3.setColor( 0xFF750065);
+                textFragment3.setmText("3번입니다");
+
+                getSupportFragmentManager().beginTransaction()
+                        .add(R.id.container_3, textFragment3)
+                        .commit();
                 break;
         }
     }
