@@ -2,29 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_memo2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".activities.WeatherActivity">
+    tools:context=".Memo2Activity">
 
-    <Spinner
-        android:id="@+id/spinner"
+    <EditText
+        android:id="@+id/title_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="제목을 입력하세요" />
 
-    <ListView
-        android:id="@+id/list_view"
+    <EditText
+        android:id="@+id/content_edit"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <GridView
-        android:id="@+id/grid_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:numColumns="3" />
-
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요" />
 
 </LinearLayout>
